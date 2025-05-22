@@ -1,21 +1,40 @@
+import './App.css';
+import Body from './components/Body';
+import Nav from './components/Nav';
 
-
-import './App.css'
-import Body from './components/Body'
-import Eventcat from './components/Eventcat'
-import Nav from './components/Nav'
-import Onlineevent from './components/Onlineevent'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Signup from './components/Signup';
+import Intrest from './components/Intrest';
+import Events from './components/Event';
 
 function App() {
-
-  return (
-    <div className='overflow-x-hidden'>
-      <Nav/>
-      <Body/>
-      <Eventcat/>
-      <Onlineevent/>
-    </div>
-  )
+	return (
+		<div className='overflow-x-hidden'>
+			<Router>
+				<nav>
+					<Nav />
+				</nav>
+				<Routes>
+					<Route
+						path="/"
+						element={<Body />}
+					/>
+					<Route
+						path="/Login"
+						element={<Signup />}
+					/>
+          <Route
+            path= "/Intrest"
+            element={<Intrest />}
+          />
+          <Route
+            path= "/filter"
+            element={<Events/>}
+          />
+				</Routes>
+			</Router>
+		</div>
+	);
 }
 
-export default App
+export default App;

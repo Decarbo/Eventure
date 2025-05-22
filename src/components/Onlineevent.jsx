@@ -65,15 +65,30 @@ const Onlineevent = () => {
 						<div className="text-center my-8">
 							<button className=" text-black text-center font-semibold text-lg px-8 py-3 border-2 min-w-[30vw] rounded-[8px]">See More</button>
 						</div>
-                  <div className=' relative mt-12'>
-                     <img src="../../src/assets/getstarted.png" alt=""  className='w-screen'/>
-                     <div className='absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-center'>
-                        <h2 className='text-left text-5xl font-bold text-[#2D2C3C]'>Events specially curated for you!</h2>
-                        <p className=' text-left text-[#2D2C3C] font-semibold text-2xl'>Get event suggestions tailored to your interests! Don't let your favorite events slip away.</p>
-                        <button className='text-center bg-[#2B293D] text-[#FFE047] font-semibold text-lg px-8 py-3 border-2  rounded-[8px] mt-4'>Get Started</button>
-                     </div>
-                  </div>
+
 					</main>
+					<div className="w-full relative mt-12">
+							<img
+								src="../../src/assets/onlineevent.png"
+								alt=""
+								className="w-screen"
+							/>
+							<div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-center w-[100%]">
+								<div className="flex justify-center   ">
+									<div className="w-[60%]">
+										<h2 className="text-left text-5xl font-medium text-[#FFE047]">Create an event with Eventure</h2>
+										<p className=" text-left text-[#FFE047] font-normal text-2xl">Got a show, event, activity or a great experience? Partner with us & get listed on Eventure</p>
+									</div>
+									<button className="flex justify-between items-center gap-4 text-center bg-[#FFE047] text-[#2B293D] font-semibold text-lg px-4 py-3 border-2  rounded-[8px] mt-4">
+										<img
+											src="../../src/assets/Vector (1).svg"
+											alt=""
+										/>
+										Create Event
+									</button>
+								</div>
+							</div>
+						</div>
 				</div>
 			}
 		</div>
