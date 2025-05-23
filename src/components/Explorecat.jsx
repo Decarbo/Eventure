@@ -12,11 +12,11 @@ const Explorecat = () => {
 							<div
 								key={item.id}
 								className="  flex flex-col justify-between items-center">
-								<div className="r">
+								<div className="">
 									<img
 										src={item.image}
 										alt=""
-										className="w-44   h-44 rounded-full object-cover"
+										className="w-34   h-34 rounded-full object-cover"
 									/>
 								</div>
 								<span className="text-center font-[600] mt-2 text-2xl ">{item.text}</span>

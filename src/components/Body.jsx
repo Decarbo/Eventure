@@ -16,7 +16,7 @@ const Body = () => {
 					/>
 					<div className="absolute  top-[0] h-[50vh]  w-full px-32 bg-[#2B293D80]   flex flex-col justify-center items-start">
 						<div className="w-[80vw]  mx-auto">
-							<p className="text-white font-bold text-5xl ">Don’t miss out!</p>
+							<p className="text-white font-bold text-5xl my-4 ">Don’t miss out!</p>
 							<p className="text-white font-bold text-5xl">
 								Explore the <span className="text-[#FFE047]">vibrant events</span> happening locally and globally.
 							</p>

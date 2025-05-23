@@ -34,7 +34,7 @@ export const Explore = [
 export const Event = [
 	{
 		id: 1,
-		image: '../src/assets/event.png',
+		image: 'https://d3vhc53cl8e8km.cloudfront.net/hello-staging/wp-content/uploads/2017/11/06013314/ESCAPE2021_1029_201753-0228_GJC.jpg',
 		month: 'Jan',
 		day: '01-14',
 		title: 'Pongal Celebrations',
@@ -45,6 +45,7 @@ export const Event = [
 		price: 'Free',
 		intrested: 480,
 		category: 'Festival',
+		map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.511965789352!2d72.833!3d19.054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c90e5e4a4e6f%3A0xd4ad10!2sBal%20Gandharva%20Rang%20Mandir!5e0!3m2!1sen!2sin!4v1701456000000!5m2!1sen!2sin',
 		city: 'Chennai',
 		state: 'TN',
 		region: 'South',
@@ -55,7 +56,7 @@ export const Event = [
 	},
 	{
 		id: 2,
-		image: '../src/assets/event.png',
+		image: 'https://d3vhc53cl8e8km.cloudfront.net/hello-staging/wp-content/uploads/2017/11/06013314/ESCAPE2021_1029_201753-0228_GJC.jpg',
 		month: 'Mar',
 		day: '03-21',
 		title: 'Holi Color Bash',
@@ -76,7 +77,7 @@ export const Event = [
 	},
 	{
 		id: 3,
-		image: '../src/assets/event.png',
+		image: 'https://d3vhc53cl8e8km.cloudfront.net/hello-staging/wp-content/uploads/2017/11/06013314/ESCAPE2021_1029_201753-0228_GJC.jpg',
 		month: 'Oct',
 		day: '10-12',
 		title: 'Navratri Garba Night',
@@ -97,7 +98,7 @@ export const Event = [
 	},
 	{
 		id: 4,
-		image: '../src/assets/event.png',
+		image: 'https://d3vhc53cl8e8km.cloudfront.net/hello-staging/wp-content/uploads/2017/11/06013314/ESCAPE2021_1029_201753-0228_GJC.jpg',
 		month: 'Nov',
 		day: '11-04',
 		title: 'Diwali Mela',
@@ -118,7 +119,7 @@ export const Event = [
 	},
 	{
 		id: 5,
-		image: '../src/assets/event.png',
+		image: 'https://d3vhc53cl8e8km.cloudfront.net/hello-staging/wp-content/uploads/2017/11/06013314/ESCAPE2021_1029_201753-0228_GJC.jpg',
 		month: 'Aug',
 		day: '08-15',
 		title: 'Independence Day Parade',
@@ -139,7 +140,7 @@ export const Event = [
 	},
 	{
 		id: 6,
-		image: '../src/assets/event.png',
+		image: 'https://d3vhc53cl8e8km.cloudfront.net/hello-staging/wp-content/uploads/2017/11/06013314/ESCAPE2021_1029_201753-0228_GJC.jpg',
 		month: 'Aug',
 		day: '08-15',
 		title: 'Independence Day Parade',

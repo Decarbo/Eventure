@@ -8,9 +8,9 @@ const Nav = () => {
 				<img
 					src="../../src/assets/ticket.png"
 					alt=""
-					className="w-14 -rotate-[8.15deg] "
+					className="w-8 -rotate-[8.15deg] "
 				/>
-				<span className="text-5xl font-normal  text-[#FFE047]">Eventure</span>
+				<span className="text-3xl font-normal mx-2  text-[#FFE047]">Eventure</span>
 			</div>
 			<div>
 				<ul className="flex justify-center items-center gap-8 font-medium ">
@@ -26,20 +26,22 @@ const Nav = () => {
 				</ul>
 			</div>
 			<div className="flex list-none gap-4 items-center justify-center">
-				<li className=" text-[#fff] font-medium text-2xl">Create Event</li>
+				<Link to="/CreateEventForm">
+				<li className=" text-[#fff] font-medium text-xl">Create Event</li>
+				</Link>
 				<Link to="/intrest">
-				<li className=" text-[#fff] font-medium text-2xl">Login</li>
+				<li className=" text-[#fff] font-medium text-xl">Login</li>
 				</Link>
 				<Link to="/Login">
 
-				<li className=" text-[#2B293D] font-medium text-2xl bg-[#FFE047] p-1 rounded-xl">Sign Up</li>
+				<li className=" text-[#2B293D] font-medium text-xl bg-[#FFE047] p-1 rounded-md">Sign Up</li>
 				</Link>
-				{/* <ul className="flex text-white justify-center items-center gap-4">
+				<ul className="flex text-white justify-center items-center gap-4">
 					<li className="flex flex-col justify-center items-center">
 						<img
 							src="../../src/assets/ion_ticket.svg"
 							alt=""
-							className="w-[40px]"
+							className="w-6"
 						/>
 						<span className="text-sm font-[600]">Tickets</span>
 					</li>
@@ -47,19 +49,21 @@ const Nav = () => {
 						<img
 							src="../../src/assets/Star 1.svg"
 							alt=""
-							className="w-[40px]"
+							className="w-6"
 						/>
 						<span className="text-sm font-[600]">intrested</span>
 					</li>
+					<Link to="/Profile">
 					<li className="flex flex-col justify-center items-center">
 						<img
 							src="../../src/assets/Group 1.svg"
 							alt=""
-							className="w-[40px]"
+							className="w-6"
 						/>
 						<span className="text-sm font-[600]">Profile</span>
 					</li>
-				</ul> */}
+					</Link>
+				</ul>
 			</div>
 		</div>
 	);
