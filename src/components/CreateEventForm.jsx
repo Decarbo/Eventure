@@ -24,8 +24,8 @@ const CreateEventForm = () => {
       <div className="flex justify-between items-center mb-10">
         {['Edit', 'Banner', 'Ticketing', 'Review'].map((step, i) => (
           <div key={i} className="flex-1 text-center">
-            <div className={`w-4 h-4 rounded-full mx-auto ${i === 0 ? 'bg-purple-600' : 'bg-gray-300'}`} />
-            <p className={`mt-2 text-sm ${i === 0 ? 'text-purple-700 font-semibold' : 'text-gray-500'}`}>{step}</p>
+            <div className={`w-4 h-4 rounded-full mx-auto ${i === 0 ? 'bg-[#FFE047]' : 'bg-gray-300'}`} />
+            <p className={`mt-2 text-sm ${i === 0 ? 'text-[#FFE047] font-semibold' : 'text-gray-500'}`}>{step}</p>
           </div>
         ))}
       </div>
@@ -155,7 +155,7 @@ const CreateEventForm = () => {
       {/* Submit Button */}
       <div className="text-right">
         <Link to="/banner">
-        <button className="bg-purple-700 text-white px-6 py-2 rounded hover:bg-purple-600">
+        <button className="bg-[#FFE047] text-white px-6 py-2 rounded hover:bg-[#f0d240]">
           Save & Continue
         </button>
         </Link>

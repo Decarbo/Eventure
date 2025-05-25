@@ -17,7 +17,7 @@ const Nav = () => {
 					<Link to="/">
 					<li className="text-[#fff] cursor-pointer text-xl hover:underline">Home</li>
 					</Link>
-					<Link to="/Filter">
+					<Link to="/Events">
 					<li className="text-[#fff] cursor-pointer text-xl ">Events</li>
 					</Link>
 
@@ -29,9 +29,7 @@ const Nav = () => {
 				<Link to="/CreateEventForm">
 				<li className=" text-[#fff] font-medium text-xl">Create Event</li>
 				</Link>
-				<Link to="/intrest">
 				<li className=" text-[#fff] font-medium text-xl">Login</li>
-				</Link>
 				<Link to="/Login">
 
 				<li className=" text-[#2B293D] font-medium text-xl bg-[#FFE047] p-1 rounded-md">Sign Up</li>
@@ -45,6 +43,8 @@ const Nav = () => {
 						/>
 						<span className="text-sm font-[600]">Tickets</span>
 					</li>
+
+				<Link to="/intrest">
 					<li className="flex flex-col justify-center items-center">
 						<img
 							src="../../src/assets/Star 1.svg"
@@ -53,6 +53,7 @@ const Nav = () => {
 						/>
 						<span className="text-sm font-[600]">intrested</span>
 					</li>
+				</Link>
 					<Link to="/Profile">
 					<li className="flex flex-col justify-center items-center">
 						<img

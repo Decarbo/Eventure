@@ -75,7 +75,7 @@ const AccountSettings = () => {
 								className="w-full border p-2 rounded"
 								placeholder="Postcode"
 							/>
-							<button className="bg-indigo-700 text-white px-4 py-2 rounded">Save My Profile</button>
+							<button className="bg-[#FFE047] text-black font-medium px-4 py-2 rounded">Save My Profile</button>
 						</div>
 					</div>
 				)}
@@ -89,6 +89,7 @@ const AccountSettings = () => {
 								disabled
 								value="andreagomez@example.com"
 							/>
+							
 							<input
 								className="w-full border p-2 rounded"
 								placeholder="New Email"
@@ -97,7 +98,7 @@ const AccountSettings = () => {
 								className="w-full border p-2 rounded"
 								placeholder="Confirm Email"
 							/>
-							<button className="bg-indigo-700 text-white px-4 py-2 rounded">Save New Email</button>
+							<button className="bg-[#FFE047] text-black font-medium px-4 py-2 rounded">Save New Email</button>
 						</div>
 					</div>
 				)}
@@ -106,7 +107,7 @@ const AccountSettings = () => {
 					<div className="max-w-md">
 						<h1 className="text-2xl font-bold mb-6">Set Password</h1>
 						<p className="mb-4">A password has not been set for your account.</p>
-						<button className="bg-indigo-700 text-white px-4 py-2 rounded">Set Password</button>
+						<button className="bg-[#FFE047] text-black font-medium px-4 py-2 rounded">Set Password</button>
 					</div>
 				)}
 			</main>

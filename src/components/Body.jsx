@@ -3,6 +3,7 @@ import Explorecat from './Explorecat';
 import Eventcat from './Eventcat';
 import Onlineevent from './Onlineevent';
 import Footer from './Footer';
+import Events from './Event';
 
 const Body = () => {
 	return (
@@ -65,6 +66,7 @@ const Body = () => {
 				<div className="h-[50vh] flex justify-center items-center">
 					<Explorecat />
 				</div>
+				<Events/>
 				<Eventcat />
 				<Footer/>
 				{/* <Onlineevent /> */}

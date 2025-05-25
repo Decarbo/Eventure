@@ -12,6 +12,7 @@ import CreateEventForm from './components/CreateEventForm';
 import BannerStep from './components/BannerStep';
 import TicketingStep from './components/TicketingStep';
 import AccountSettings from './components/Account/AccountSettings';
+import EventListing from './components/EventListing';
 
 function App() {
 	return (
@@ -34,8 +35,8 @@ function App() {
 						element={<Intrest />}
 					/>
 					<Route
-						path="/filter"
-						element={<Events />}
+						path="/Events"
+						element={<EventListing/>}
 					/>
 					<Route
 						path="/Proceed"

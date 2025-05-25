@@ -2,6 +2,7 @@ import React from 'react';
 import { Event } from '../Data';
 import { tags } from '../Data';
 import { Link } from 'lucide-react';
+import Card from './Card';
 
 const Eventcat = () => {
 	return (
@@ -25,41 +26,8 @@ const Eventcat = () => {
 								);
 							})}
 						</div>
-						<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-10 gap-6">
-	{Event.map((item) => (
-		<Link to={`/events/${item.id}`} key={item.id}>
-			<div className="max-h-[461px] max-w-[512px] rounded-[10px] p-1 shadow hover:shadow-lg transition duration-200 bg-white">
-				<img
-					src={item.image}
-					alt={item.title}
-					className="w-full h-[200px] object-cover rounded-t-[10px]"
-				/>
-
-				<div className="flex gap-4 p-4">
-					<div className="w-[30%] text-center">
-						<p className="text-[#4539B4] font-bold text-3xl">{item.month}</p>
-						<p className="text-[#2D2C3C] font-bold text-3xl">{item.day}</p>
-					</div>
-
-					<div className="w-[70%]">
-						<h2 className="text-[#2D2C3C] font-semibold text-2xl">{item.title}</h2>
-						<p className="text-[#7A7B8A] font-semibold text-[18px] mt-2 line-clamp-1">{item.detail}</p>
-						<p className="text-[#7A7B8A] font-normal text-lg">{item.time}</p>
-
-						<div className="flex items-center gap-2 mt-4 flex-wrap">
-							<img src="../../src/assets/price.svg" alt="Price" className="w-5" />
-							<p className="text-[#7A7B8A] font-normal text-lg">{item.price}</p>
-							<img src="../../src/assets/Ellipse 8.svg" alt="Dot" />
-							<img src="../../src/assets/Star 1 (1).svg" alt="Star" />
-							<p className="text-[#7A7B8A] font-normal text-lg">{item.intrested}</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</Link>
-	))}
-</div>
-
+					
+								<Card />
 
 						<div className="text-center my-8">
 							<button className=" text-black text-center font-semibold text-lg px-8 py-3 border-2 min-w-[30vw] rounded-[8px]">See More</button>

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Event } from '../Data';
 import EventDetail from './EventDetail';
 import { Link } from 'react-router-dom';
+import EventListing from './EventListing';
 
 const Events = () => {
 	const [filter, setFilter] = useState('All');
@@ -19,14 +20,13 @@ const Events = () => {
 				{uniqueFestivals.map((festival) => (
 					<button
 						key={festival}
-						className={`px-4 py-2 rounded-full border ${filter === festival ? 'bg-blue-600 text-white' : 'bg-white text-gray-700 hover:bg-gray-100'}`}
+						className={`px-4 py-2 rounded-full border ${filter === festival ? 'bg-[#FFE047] text-black font-bold' : 'bg-white text-gray-700 hover:bg-gray-100'}`}
 						onClick={() => setFilter(festival)}>
 						{festival}
 					</button>
 				))}
 			</div>
 
-			{/* Events Grid */}
 			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 				{filteredEvents.map((event) => (
 					<div
@@ -42,7 +42,7 @@ const Events = () => {
 							/>
 							<div className="p-4">
 								<h3 className="text-lg font-semibold mb-1">{event.title}</h3>
-								<p className="text-sm text-gray-600 mb-2">{event.detail}</p>
+								<p className="text-sm text-gray-600 mb-2 line-clamp-1">{event.detail}</p>
 								<p className="text-sm">
 									<strong>Date:</strong> {event.date}
 								</p>
@@ -51,7 +51,7 @@ const Events = () => {
 								</p>
 								<p className="text-sm">
 									<strong>Location:</strong> {event.location}
-									
+
 								</p>
 								<p className="text-sm">
 									<strong>Price:</strong> {event.isFree ? 'Free' : `₹${event.price}`}
