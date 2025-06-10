@@ -13,6 +13,7 @@ import BannerStep from './components/BannerStep';
 import TicketingStep from './components/TicketingStep';
 import AccountSettings from './components/Account/AccountSettings';
 import EventListing from './components/EventListing';
+import EventCreationWizard from './components/EventCreationWizard';
 
 function App() {
 	return (
@@ -52,7 +53,7 @@ function App() {
 					/>
 					<Route
 						path="/CreateEventForm"
-						element={<CreateEventForm />}
+						element={<EventCreationWizard />}
 					/>
 					<Route
 						path="/event/:id"
